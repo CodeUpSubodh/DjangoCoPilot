@@ -1,0 +1,24 @@
+{
+  "name": "django-n1-detector",
+  "displayName": "Django N+1 Problem Detector",
+  "description": "Detect N+1 query problems in Django projects.",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "activationEvents": [
+    "onCommand:extension.checkNPlusOne"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.checkNPlusOne",
+        "title": "Check for N+1 Problems"
+      }
+    ]
+  },
+  "devDependencies": {
+    "vscode": "^1.1.37"
+  }
+}
